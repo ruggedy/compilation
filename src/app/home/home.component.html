@@ -1,0 +1,23 @@
+<button md-button><i class="fa fa-bars"></i> </button>
+
+<md-sidenav-layout class="sidenav-layout secondary-theme">
+	<md-sidenav mode="side">
+
+	</md-sidenav>
+
+
+	<div class="main-content">
+		<app-carousel></app-carousel>
+		<div class="page-container">
+			<div class="row Grid--gutters">
+				<div class="col-md-8">
+					<router-outlet></router-outlet>
+				</div>
+				<div class="col-md-4">
+					<app-side-view></app-side-view>
+				</div>
+			</div>
+		</div>
+	</div>
+	<app-footer></app-footer>
+</md-sidenav-layout>

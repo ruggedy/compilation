@@ -1,0 +1,14 @@
+@import '../../../../variables';
+
+.footer-container {
+	display: flex;
+	background-color: $primary-color-light; 
+	min-height: 60px;
+	justify-content: center;
+	align-items: center;
+	color: $primary-text-color;
+	font-size: .9em;
+
+	margin-top: 40px;
+
+}

@@ -1,0 +1,29 @@
+@import '../../../../variables';
+
+.component-container{
+}
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	overflow: hidden;
+	height: 5em;
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+h3.title{
+	color: $secondary-text-color;
+	font-size: 1em;
+	line-height: 1.2em;
+	word-spacing: .1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}

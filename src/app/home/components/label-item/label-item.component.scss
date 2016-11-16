@@ -1,0 +1,31 @@
+@import '../../../../variables';
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.label-item-container{
+	display: inline-flex;
+	cursor: pointer;
+	padding: 5px;
+	border: 1px solid #E6E6E6;
+	font-size: .8em;
+	height: auto;
+	width: auto;
+}
+
+.label-name {
+	background-color: $primary-color;
+	font-weight: bold;
+	color: white;
+	margin: -5px;
+	padding: 5px;
+	border-right: 1px solid #E6E6E6;
+}
+
+.label-count {
+	color: $primary-color-light;
+	padding-left: 10px;
+}
+

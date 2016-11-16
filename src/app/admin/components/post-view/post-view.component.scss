@@ -1,0 +1,35 @@
+@import '../../../../admin_palette';
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin-bottom: 3em;
+}
+
+.title h2 {
+    margin-bottom: .5em;
+}
+
+.title h4 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    color: $secondary-text-color;
+}
+
+.title p {
+    margin-top: 0;
+    color: $secondary-text-color;
+}
+
+.title p> span {
+    margin-right: 5px;
+    font-size: .8em;
+}
+
+.post-content {
+    font-size: 1em;
+    color: $primary-text-color;
+    word-spacing: .5em;
+}

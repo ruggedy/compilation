@@ -1,0 +1,14 @@
+<md-toolbar color="accent">Featured Post</md-toolbar>
+<div *ngIf="featuredPost" class="featured-post">
+	<div class="image-container">
+		<img src="{{mainPicture}}" alt="">
+	</div>
+	<div class="this-container">
+		<h2 class="post-title">
+			<a>{{title}}</a>
+		</h2>
+		<div class="body-container">
+			{{body | word}}
+		</div>
+	</div>
+</div>

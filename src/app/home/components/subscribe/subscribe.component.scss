@@ -1,0 +1,26 @@
+@import '../../../../variables';
+
+
+.subscribe-container {
+	display: flex;
+	border: 1px solid #E6E6E6;
+	background-color: white;
+	padding: 20px;
+	justify-content: center;
+	align-content: center;
+}
+
+.subscribe-container form {
+	display: flex;
+	width: 100%;
+
+}
+
+button{
+	height: 40px;
+}
+
+.subscribe-container form md-input{
+	flex: 1 0 auto;
+	margin-right: 5px;
+}

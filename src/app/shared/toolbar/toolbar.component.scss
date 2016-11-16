@@ -1,0 +1,30 @@
+@import '../../../variables';
+
+.toolbar-container{
+  position: fixed;
+  background-color: $primary-color;
+  color: $primary-color-text;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 16px;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+}
+
+.more {
+  background: url("./assets/svg/more.svg");
+  height: 24px;
+  width: 24px;
+}
+
+.menu-icon a i {
+  font-size: 1.8em;
+  color: $primary-color-text;
+  text-decoration: none;
+  cursor: pointer;
+}

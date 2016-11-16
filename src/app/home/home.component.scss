@@ -1,0 +1,24 @@
+@import '../../variables';
+
+
+i.fa-bars {
+	font-size: 1.5em;
+	color: $primary-color;
+}
+
+.sidenav-layout {
+	background-color: #f5f5f5;
+}
+
+
+
+
+
+@media screen and (min-width: 1400px) {
+	.page-container {
+		width: 1170px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1em;
+	}
+}

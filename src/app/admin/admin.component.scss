@@ -1,0 +1,43 @@
+@import '../../variables';
+
+.big-container{
+	padding-left: 230px;
+	max-width: 100%;
+}
+
+.side-nav{
+	position: fixed;
+	height: 100vh;
+	margin-left: -230px;
+	left: 230px;
+	width: 230px;
+	overflow-y: auto;
+	background-color: $Deep_Purple;
+
+}
+
+
+.main-content{
+	width: 100%;
+	position: relative;
+	background-color: #fdfdfd;
+}
+
+.header{
+	height: 5em;
+	font-size: 1.8em;
+	color: #f7f7f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+app-toolbar{
+	height: 40px;
+}

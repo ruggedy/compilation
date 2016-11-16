@@ -1,0 +1,35 @@
+@import '../../../../admin_palette';
+:host {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+a {
+	text-decoration: none;
+	color: $primary-color-text;
+	cursor: pointer;
+	font-size: .8em;
+	padding: 15px 20px;
+	width: 100%;
+	border-bottom: 1px solid $primary-color-light;
+	transition: all 400ms ease-in-out;
+}
+
+a:first-of-type{
+	border-top: 1px solid $primary-color-light;
+}
+
+a i {
+	font-size: 1.4em;
+	margin-right: .5em;
+}
+
+a:first-of-type i {
+	font-size: 1.6em;
+	
+}
+
+a:hover {
+	background-color: $primary-color-dark;
+}

@@ -1,0 +1,25 @@
+@import '../../../../admin_palette';
+
+.demo-basic {
+  padding: 0;
+}
+
+
+.demo-basic md-card-content {
+  padding: 16px;
+}
+
+.body {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: white;
+
+}
+
+.body  .title-input{
+	width: 70%;
+}
+

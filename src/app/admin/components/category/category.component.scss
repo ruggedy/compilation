@@ -1,0 +1,63 @@
+@import '../../../../admin_palette';
+
+.demo-basic {
+  padding: 0;
+  height: 25em;
+}
+
+
+.demo-basic md-card-content,
+.demo-basic md-card-footer {
+  padding: 16px;
+  width: 100%;
+}
+
+.category-list{
+	display: flex;
+	height: 15em;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.row{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.row::-webkit-scrollbar {
+	display: none;
+}
+
+.category-item{
+	display: flex;
+	padding: 1em .8em;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 1em;
+	overflow: hidden;
+	max-height: 3em;
+}
+
+.category-item.checked{
+	background-color: $primary-color;
+	color: $primary-color-text;
+}
+
+.category-item.checked md-checkbox{
+	color: $primary-color-text;
+}
+
+.add-category{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1em;
+}
+.add-category md-input{
+	width: 90%;
+}

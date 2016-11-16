@@ -1,0 +1,19 @@
+<md-card class=" demo-basic">
+	<md-toolbar color="primary">Pictures</md-toolbar>
+	<md-card-content>
+		<md-radio-group (change)="selectedImage.emit($event.value)">
+			<p-carousel [value]="imageList" numVisible="1">
+				<template let-image>
+					<div class="image-container">
+						<img src="{{image}}" alt="">
+					</div>
+					<button md-raised-button color="accent" type="button" ngIIclipboard [cbContent]="image"><i class="fa fa-clipboard"></i></button>
+					<md-radio-button [value]="image" [checked]="validateChecked(image)" ></md-radio-button>
+				</template>
+			</p-carousel>
+		</md-radio-group>
+	</md-card-content>
+	<md-card-footer>
+		<input type="file" (change)="imageUpload.emit($event.target.files)" multiple value="">
+	</md-card-footer>
+</md-card>

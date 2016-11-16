@@ -1,0 +1,11 @@
+<md-card class="demo-basic">
+	<md-toolbar color="primary">Post Title</md-toolbar>
+	<md-card-content>
+		<div class="body">
+			<md-input class="title-input" divideColor="primary" [value]="inTitle" (keyup)="outTitle.emit($event.target.value)" placeholder="Enter Post Title"></md-input>
+			<md-checkbox (change)="checked.emit($event.checked)" [checked]="inChecked" align="end">
+				Featured?
+			</md-checkbox>
+		</div>
+	</md-card-content>
+</md-card>

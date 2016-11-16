@@ -1,0 +1,20 @@
+@import '../../../../variables';
+
+.social-links-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+	border: 1px solid $primary-color-light;
+	background-color: white;
+
+}
+
+.social-links-container a {
+	text-decoration: none;
+}
+
+.social-links-container i {
+	font-size: 1.2em;
+	color: $primary-color;
+}

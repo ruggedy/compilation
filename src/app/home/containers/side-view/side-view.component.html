@@ -1,0 +1,19 @@
+<div class="side-view">
+    <div class="row Grid--gutters">
+        <div class="col-md-12">
+            <app-featured-post [featuredPost]="featuredPost$ | async"></app-featured-post>
+        </div>
+        <div class="col-md-12">
+            <app-social-links></app-social-links>
+        </div>
+		<div class="col-md-12">
+			<app-popular-post-item-list [posts]="allPosts$ | async" ></app-popular-post-item-list>
+		</div>
+		<div class="col-md-12">
+			<app-subscribe></app-subscribe>
+		</div>
+		<div class="col-md-12">
+			<app-label-cloud [tags]="allTags$ | async"></app-label-cloud>
+		</div>
+    </div>
+</div>

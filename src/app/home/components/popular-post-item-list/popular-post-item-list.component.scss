@@ -1,0 +1,29 @@
+@import '../../../../variables';
+
+.popular-posts {
+	background-color: white;
+	padding: 0px 20px;
+	border: 1px solid #E6E6E6;
+}
+
+md-toolbar{
+    justify-content: center;
+    align-items: center;
+	color: $primary-color-light;
+	border: 1px solid #E6E6E6;
+	border-bottom: 1px solid transparent;
+	font-size: 1em;
+	height: 55px;
+	font-weight: bold;
+}
+
+.item {
+	border-top: 1px solid #f4f4f4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.item:first-of-type {
+	border-top: 1px solid transparent;
+}

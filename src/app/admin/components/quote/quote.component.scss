@@ -1,0 +1,14 @@
+@import '../../../../admin_palette';
+
+.main-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+textarea {
+	width: 400px;
+	height: 200px;
+	border: 1px solid $accent-color;
+}
