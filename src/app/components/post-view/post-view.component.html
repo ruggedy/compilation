@@ -1,0 +1,9 @@
+<div *ngIf="post" class="main-container">
+    <div class="title">
+       <h2>{{title}}</h2>
+       <h4>{{category.name}}</h4>
+       <p> Tags: <span *ngFor="let tag of post.tags" >{{tag.name}}</span></p>
+    </div>
+    <div [innerHtml]="postContent" class="post-content"></div>
+
+</div>

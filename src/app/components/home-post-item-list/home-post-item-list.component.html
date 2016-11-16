@@ -1,0 +1,5 @@
+<div class="row Grid--gutters">
+	<div *ngFor="let post of posts | dateSort | array:5 "  class="col-md-12">
+		<app-home-post-item [post]="post" ></app-home-post-item>
+	</div>
+</div>

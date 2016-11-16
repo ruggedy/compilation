@@ -1,0 +1,22 @@
+<md-card class="demo-basic">
+	<md-toolbar color="accent">Choose Tags</md-toolbar>
+	<md-card-content>
+		<div class="tag-list">
+			<div class="row small Grid--gutters">
+				<div *ngFor="let tag of tagsList" class="col-md-6">
+					<div class="tag-item" [ngClass]="validateChecked(tag._id)? 'checked':''" >
+						<md-checkbox (change)="updateChecked(tag._id, $event)" [checked]="validateChecked(tag._id)">
+							{{tag.name}}
+						</md-checkbox>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</md-card-content>
+	<md-card-footer>
+		<div class="add-tag">
+			<md-input placeholder="Add New Tag" [(ngModel)]="value" (keypress)="addTag($event)"></md-input>
+		</div>
+	</md-card-footer>
+</md-card>

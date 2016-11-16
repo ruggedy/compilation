@@ -1,0 +1,8 @@
+<md-toolbar class="custom-md-toolbar" color="accent"> Subscribe Here</md-toolbar>
+<div class="subscribe-container" >
+	<form (ngSubmit)="sendEmail($event)" #heroForm="ngForm" >
+		<md-input [(ngModel)]="emailValue" name="emailValue" placeholder="Enter Email Address" ></md-input>
+		<button type="submit" md-raised-button color="primary" > Submit </button>
+	</form>
+
+</div>

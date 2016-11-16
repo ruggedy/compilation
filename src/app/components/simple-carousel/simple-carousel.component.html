@@ -1,0 +1,8 @@
+<p-carousel [value]="collections" >
+  <template let-collection>
+    <div class="image-container">
+      <img src="{{collection.mainPicture}}" alt="">
+    </div>
+    <h4>{{collection.title}}</h4>
+  </template>
+</p-carousel>

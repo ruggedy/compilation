@@ -1,0 +1,65 @@
+@import '../../../variables';
+
+.demo-basic {
+  padding: 0;
+  height: 25em;
+}
+
+
+.demo-basic md-card-content,
+.demo-basic md-card-footer {
+  padding: 16px;
+}
+
+.tag-list{
+	display: flex;
+	height: 15em;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.row{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+
+}
+
+.row::-webkit-scrollbar {
+	display: none;
+}
+
+.tag-item{
+	display: flex;
+	padding: 1em .8em;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 15px;
+	font-size: 1em;
+	overflow: hidden;
+	max-height: 3em;
+}
+
+.tag-item.checked{
+	background-color: $accent-color;
+	color: $primary-color-text;
+}
+
+.tag-item.checked md-checkbox{
+	color: $primary-color-text;
+}
+
+
+.add-tag{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1em;
+}
+.add-tag md-input{
+	width: 90%;
+}

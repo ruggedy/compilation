@@ -1,0 +1,22 @@
+<div class="outer--wrap">
+	<div class="image--wrap" [@imageState]="imagePos">
+		<div class="image--container" *ngFor="let image of images">
+			<div class="image--sub--container">
+				<img src="{{image.image}}" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="content--wrap">
+		<div class="row smallest Grid--gutters">
+			<div *ngFor="let item of images; let i = index;" class=" col-xs-6 col-md-3">
+				<div class="outer--info" (mouseover)=changeIndex(i) [ngClass]="currentIndex === i? 'sync'  : ''">
+					<div class="more--info" [ngClass]="currentIndex === i? 'sync' : ''">
+						<h3>{{item.header}}</h3>
+						<p>{{item.text}}</p>
+						<button md-raised-button color="primary" >Read More</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,51 @@
+<md-toolbar class="custom-md-toolbar small">Museum Opening Times</md-toolbar>
+<div class="opening-times">
+  <div class="row small Grid--gutters">
+    <div *ngFor="let date of dates" class="col-md-12 date-item">
+      <div class="date-container">
+        <div class="row smallest Grid--gutters">
+          <div class="col-md-6 days">
+            {{date.day}}
+          </div>
+          <div class="col-md-6">
+            <div *ngIf="date.open" class="row smallest Grid--gutters">
+              <div class="col-md-6">
+                {{date.open}}
+              </div>
+              <div class="col-md-6">
+                {{date.close}}
+              </div>
+            </div>
+            <div *ngIf="!date.open" class="row closed">
+              <div class="col-md-12">
+                Closed
+              </div>
+            </div>
+          </div>
+          <div *ngIf="date.open" class="col-md-12 last-admissions">
+            Last admissions: {{date.last}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<md-toolbar class="custom-md-toolbar small">Admission Charges</md-toolbar>
+<div class="opening-times">
+  <div class="row small Grid--gutters">
+    <div *ngFor="let admission of admissions" class="col-md-12 date-time">
+      <div class="date-container">
+        <div class="row smallest Grid--gutters">
+          <div class="col-md-6">
+            {{admission.type}}
+          </div>
+          <div class="col-md-6">
+            {{admission.price}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

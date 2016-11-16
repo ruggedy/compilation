@@ -1,0 +1,8 @@
+<md-card class="demo-basic" *ngIf="mainPicture">
+	<a (click)="postItemClicked.emit(id)">
+		<div class="image-container">
+			<img md-card-image src="{{mainPicture}}" alt="">
+			<div class="overlay"></div>
+		</div>
+	</a>
+</md-card>

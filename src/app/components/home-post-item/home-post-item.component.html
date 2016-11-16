@@ -1,0 +1,29 @@
+<div *ngIf="post" class="main-container">
+	<h2 class="post-title">
+		<a>{{title}}</a>
+	</h2>
+	<div class="post-info">
+		<i class="fa fa-clock-o"></i>{{date | date:'fullDate'}}
+	</div>
+	<div class="middle-container">
+		<div class="row Grid--gutters">
+			<div class="col-md-6">
+				<div class="image-container">
+					<img src="{{mainPicture}}" alt="">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="body-container">
+					{{body| word:'40'}}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tags">
+		<span>Tags: </span>
+		<a *ngFor="let tag of tags">{{tag.name}}</a>
+	</div>
+	<div class="footer">
+		<button md-button color="primary">Continue Reading<i class="fa fa-long-arrow-right"></i></button>
+	</div>
+</div>

@@ -1,0 +1,18 @@
+<md-card class="demo-basic" *ngIf="title">
+	<a (click)="postItemClicked.emit(id)">
+		<div class="image-container">
+			<img md-card-image src="{{mainPicture}}" alt="">
+			<div class="overlay"></div>
+		</div>
+		<md-card-content>
+			<h4>{{title}}</h4>
+			<p>{{body | word:10 }}</p>
+		</md-card-content>
+	</a>
+	<md-card-footer class="row">
+		<div class="random-line"></div>
+		<button md-button class="col-xs-4" (click)="edit.emit(id)" color="primary"><i class="fa fa-pencil-square"></i></button>
+		<button md-button class="col-xs-4" (click)="changeFeatured.emit(id)" color="accent"><i class="fa fa-star" [ngClass]="featured?'featured':'not-featured'" ></i></button>
+		<button md-button class="col-xs-4" (click)="delete.emit(id)" color="warn"><i class="fa fa-trash"></i></button>
+	</md-card-footer>
+</md-card>

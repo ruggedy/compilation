@@ -1,0 +1,41 @@
+@import '../../../variables';
+
+md-toolbar {
+  margin-top: 10px;
+}
+
+md-toolbar:first-of-type {
+  margin-top: 0;
+}
+.opening-times {
+  background-color: white;
+  border: 1px solid #E6E6E6;
+}
+
+.date-container {
+  padding: 10px;
+  color: $primary-text-color;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.date-item:last-of-type .date-container{
+  border-bottom: transparent;
+}
+
+.days {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.last-admissions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8em;
+  color: $accent-color;
+  margin-top: .5em;
+}
+
+.closed {
+  color: $primary-color
+}

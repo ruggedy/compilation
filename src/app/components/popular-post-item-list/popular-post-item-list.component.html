@@ -1,0 +1,8 @@
+<md-toolbar color="accent" >Popular Posts</md-toolbar>
+<div class="popular-posts">
+	<div class="row ">
+		<div *ngFor="let post of posts | dateSort | array:10 " class="col-md-12 item ">
+			<app-popular-post-item [post]="post"></app-popular-post-item>
+		</div>
+	</div>
+</div>

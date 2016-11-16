@@ -1,0 +1,21 @@
+<md-card class="demo-basic">
+	<md-toolbar color="primary">Choose Categories</md-toolbar>
+	<md-card-content>
+		<md-radio-group (change)="selectedCategory.emit($event.value); currentCategory = $event.value">
+			<div class="category-list">
+				<div class="row small Grid--gutters ">
+					<div *ngFor="let category of categoryList" class="col-md-6">
+						<div class="category-item" [ngClass]="validateChecked(category._id)? 'checked':''">
+							<md-radio-button [value]="category._id" [checked]="validateChecked(category._id)"> {{category.name}} </md-radio-button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</md-radio-group>
+	</md-card-content>
+	<md-card-footer>
+		<div class="add-category">
+			<md-input placeholder="Add New Category" [(ngModel)]="value" (keypress)="addCategory($event)"></md-input>
+		</div>
+	</md-card-footer>
+</md-card>
